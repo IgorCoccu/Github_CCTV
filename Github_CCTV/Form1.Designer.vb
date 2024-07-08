@@ -22,9 +22,29 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        components = New System.ComponentModel.Container()
+        Me.btnclose = New System.Windows.Forms.Button()
+        Me.SuspendLayout()
+        '
+        'btnclose
+        '
+        Me.btnclose.Location = New System.Drawing.Point(376, 164)
+        Me.btnclose.Name = "btnclose"
+        Me.btnclose.Size = New System.Drawing.Size(122, 61)
+        Me.btnclose.TabIndex = 0
+        Me.btnclose.Text = "Close"
+        Me.btnclose.UseVisualStyleBackColor = True
+        '
+        'Form1
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.ClientSize = New System.Drawing.Size(677, 494)
+        Me.Controls.Add(Me.btnclose)
+        Me.Name = "Form1"
         Me.Text = "Form1"
+        Me.ResumeLayout(False)
+
     End Sub
 
+    Friend WithEvents btnclose As Button
 End Class
